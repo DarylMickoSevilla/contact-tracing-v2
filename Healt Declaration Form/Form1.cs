@@ -13,6 +13,7 @@ namespace Healt_Declaration_Form
 
             Form = File.CreateText(@"C:\HealthDeclarationForm\HealthDeclarationForm.txt");
             Form.WriteLine("Name: " + NameBox1.Text);
+            Form.WriteLine("Date: " + DateBox8.Text);
             Form.WriteLine("Age: " + AgeBox2.Text);
             Form.WriteLine("Contact#: " + ContactBox3.Text);
             Form.WriteLine("Temperature: " + TemperatureBox4.Text + "°C");

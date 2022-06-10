@@ -49,6 +49,9 @@
             this.currentlabel = new System.Windows.Forms.Label();
             this.Savebtn = new System.Windows.Forms.Button();
             this.MainLabel = new System.Windows.Forms.Label();
+            this.DateBox8 = new System.Windows.Forms.TextBox();
+            this.Datelabel = new System.Windows.Forms.Label();
+            this.DateFormat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NameBox1
@@ -56,7 +59,7 @@
             this.NameBox1.BackColor = System.Drawing.SystemColors.Window;
             this.NameBox1.Location = new System.Drawing.Point(103, 35);
             this.NameBox1.Name = "NameBox1";
-            this.NameBox1.Size = new System.Drawing.Size(352, 23);
+            this.NameBox1.Size = new System.Drawing.Size(222, 23);
             this.NameBox1.TabIndex = 0;
             // 
             // NameLabel1
@@ -149,7 +152,7 @@
             // 
             this.AddressBox7.Location = new System.Drawing.Point(103, 209);
             this.AddressBox7.Name = "AddressBox7";
-            this.AddressBox7.Size = new System.Drawing.Size(352, 23);
+            this.AddressBox7.Size = new System.Drawing.Size(269, 23);
             this.AddressBox7.TabIndex = 11;
             // 
             // DegreeLabel
@@ -235,11 +238,40 @@
             this.MainLabel.TabIndex = 20;
             this.MainLabel.Text = "Health Declaration Form";
             // 
+            // DateBox8
+            // 
+            this.DateBox8.Location = new System.Drawing.Point(445, 12);
+            this.DateBox8.Name = "DateBox8";
+            this.DateBox8.Size = new System.Drawing.Size(80, 23);
+            this.DateBox8.TabIndex = 21;
+            this.DateBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Datelabel
+            // 
+            this.Datelabel.AutoSize = true;
+            this.Datelabel.Location = new System.Drawing.Point(405, 15);
+            this.Datelabel.Name = "Datelabel";
+            this.Datelabel.Size = new System.Drawing.Size(34, 15);
+            this.Datelabel.TabIndex = 22;
+            this.Datelabel.Text = "Date:";
+            // 
+            // DateFormat
+            // 
+            this.DateFormat.AutoSize = true;
+            this.DateFormat.Location = new System.Drawing.Point(445, 38);
+            this.DateFormat.Name = "DateFormat";
+            this.DateFormat.Size = new System.Drawing.Size(75, 15);
+            this.DateFormat.TabIndex = 23;
+            this.DateFormat.Text = "*dd/mm/yy*";
+            // 
             // HealthDeclarationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(550, 315);
+            this.Controls.Add(this.DateFormat);
+            this.Controls.Add(this.Datelabel);
+            this.Controls.Add(this.DateBox8);
             this.Controls.Add(this.MainLabel);
             this.Controls.Add(this.Savebtn);
             this.Controls.Add(this.currentlabel);
@@ -291,5 +323,8 @@
         private Label currentlabel;
         private Button Savebtn;
         private Label MainLabel;
+        private TextBox DateBox8;
+        private Label Datelabel;
+        private Label DateFormat;
     }
 }
