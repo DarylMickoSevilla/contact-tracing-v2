@@ -6,5 +6,15 @@ namespace Healt_Declaration_Form
         {
             InitializeComponent();
         }
+
+        private void Savebtn_Click(object sender, EventArgs e)
+        {
+            StreamWriter Form;
+
+            Form = File.CreateText(@"C:\HealthDeclarationForm\HealthDeclarationForm.txt");
+            Form.WriteLine("Name: " + NameBox1.Text);
+            Form.Close();
+            this.Close();
+        }
     }
 }
