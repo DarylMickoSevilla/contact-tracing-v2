@@ -21,7 +21,6 @@ namespace Healt_Declaration_Form
             Form.WriteLine("Time-out: " + TimeoutBox6.Text);
             Form.WriteLine("Address: " + AddressBox7.Text);
             Form.Close();
-            this.Close();
         }
     }
 }

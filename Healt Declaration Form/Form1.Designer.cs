@@ -52,6 +52,8 @@
             this.DateBox8 = new System.Windows.Forms.TextBox();
             this.Datelabel = new System.Windows.Forms.Label();
             this.DateFormat = new System.Windows.Forms.Label();
+            this.RecordBox1 = new System.Windows.Forms.RichTextBox();
+            this.Recordbtn2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameBox1
@@ -264,11 +266,30 @@
             this.DateFormat.TabIndex = 23;
             this.DateFormat.Text = "*dd/mm/yy*";
             // 
+            // RecordBox1
+            // 
+            this.RecordBox1.Location = new System.Drawing.Point(66, 325);
+            this.RecordBox1.Name = "RecordBox1";
+            this.RecordBox1.Size = new System.Drawing.Size(373, 159);
+            this.RecordBox1.TabIndex = 24;
+            this.RecordBox1.Text = "";
+            // 
+            // Recordbtn2
+            // 
+            this.Recordbtn2.Location = new System.Drawing.Point(189, 513);
+            this.Recordbtn2.Name = "Recordbtn2";
+            this.Recordbtn2.Size = new System.Drawing.Size(108, 23);
+            this.Recordbtn2.TabIndex = 25;
+            this.Recordbtn2.Text = "Display Record";
+            this.Recordbtn2.UseVisualStyleBackColor = true;
+            // 
             // HealthDeclarationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 315);
+            this.ClientSize = new System.Drawing.Size(539, 558);
+            this.Controls.Add(this.Recordbtn2);
+            this.Controls.Add(this.RecordBox1);
             this.Controls.Add(this.DateFormat);
             this.Controls.Add(this.Datelabel);
             this.Controls.Add(this.DateBox8);
@@ -326,5 +347,7 @@
         private TextBox DateBox8;
         private Label Datelabel;
         private Label DateFormat;
+        private RichTextBox RecordBox1;
+        private Button Recordbtn2;
     }
 }
