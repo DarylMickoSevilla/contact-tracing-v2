@@ -282,6 +282,7 @@
             this.Recordbtn2.TabIndex = 25;
             this.Recordbtn2.Text = "Display Record";
             this.Recordbtn2.UseVisualStyleBackColor = true;
+            this.Recordbtn2.Click += new System.EventHandler(this.Recordbtn2_Click);
             // 
             // HealthDeclarationForm
             // 

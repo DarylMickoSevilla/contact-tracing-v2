@@ -22,5 +22,16 @@ namespace Healt_Declaration_Form
             Form.WriteLine("Address: " + AddressBox7.Text);
             Form.Close();
         }
+
+        private void Recordbtn2_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog Read = new OpenFileDialog();
+
+            if (Read.ShowDialog() == DialogResult.OK)
+            {
+                RecordBox1.Text = System.IO.File.ReadAllText(Read.FileName);
+            }
+        }
     }
 }
