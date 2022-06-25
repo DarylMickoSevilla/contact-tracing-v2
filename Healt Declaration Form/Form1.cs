@@ -21,6 +21,8 @@ namespace Healt_Declaration_Form
             Form.WriteLine("Time-out: " + TimeoutBox6.Text);
             Form.WriteLine("Address: " + AddressBox7.Text);
             Form.Close();
+
+            NameBox1.Text = DateBox8.Text = AgeBox2.Text = ContactBox3.Text = TemperatureBox4.Text = TimeinBox5.Text = TimeoutBox6.Text = AddressBox7.Text = " ";
         }
 
         private void Recordbtn2_Click(object sender, EventArgs e)
