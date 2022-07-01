@@ -52,9 +52,12 @@
             this.DateBox8 = new System.Windows.Forms.TextBox();
             this.Datelabel = new System.Windows.Forms.Label();
             this.DateFormat = new System.Windows.Forms.Label();
-            this.RecordBox1 = new System.Windows.Forms.RichTextBox();
-            this.Recordbtn2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.QRCode = new System.Windows.Forms.Button();
+            this.OpenFilebtn = new System.Windows.Forms.Button();
+            this.Orlbl = new System.Windows.Forms.Label();
+            this.Doyou = new System.Windows.Forms.Label();
+            this.Openfilelbl = new System.Windows.Forms.Label();
+            this.Exitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameBox1
@@ -223,7 +226,7 @@
             // Savebtn
             // 
             this.Savebtn.BackColor = System.Drawing.SystemColors.Info;
-            this.Savebtn.Location = new System.Drawing.Point(232, 307);
+            this.Savebtn.Location = new System.Drawing.Point(225, 263);
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(75, 23);
             this.Savebtn.TabIndex = 19;
@@ -267,42 +270,74 @@
             this.DateFormat.TabIndex = 23;
             this.DateFormat.Text = "*dd/mm/yy*";
             // 
-            // RecordBox1
+            // QRCode
             // 
-            this.RecordBox1.Location = new System.Drawing.Point(94, 348);
-            this.RecordBox1.Name = "RecordBox1";
-            this.RecordBox1.Size = new System.Drawing.Size(373, 159);
-            this.RecordBox1.TabIndex = 24;
-            this.RecordBox1.Text = "";
+            this.QRCode.Location = new System.Drawing.Point(203, 351);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Size = new System.Drawing.Size(138, 23);
+            this.QRCode.TabIndex = 26;
+            this.QRCode.Text = "QR Code Scanner";
+            this.QRCode.UseVisualStyleBackColor = true;
+            this.QRCode.Click += new System.EventHandler(this.QRCode_Click);
             // 
-            // Recordbtn2
+            // OpenFilebtn
             // 
-            this.Recordbtn2.Location = new System.Drawing.Point(189, 513);
-            this.Recordbtn2.Name = "Recordbtn2";
-            this.Recordbtn2.Size = new System.Drawing.Size(108, 23);
-            this.Recordbtn2.TabIndex = 25;
-            this.Recordbtn2.Text = "Display Record";
-            this.Recordbtn2.UseVisualStyleBackColor = true;
-            this.Recordbtn2.Click += new System.EventHandler(this.Recordbtn2_Click);
+            this.OpenFilebtn.Location = new System.Drawing.Point(40, 435);
+            this.OpenFilebtn.Name = "OpenFilebtn";
+            this.OpenFilebtn.Size = new System.Drawing.Size(75, 23);
+            this.OpenFilebtn.TabIndex = 27;
+            this.OpenFilebtn.Text = "Open File";
+            this.OpenFilebtn.UseVisualStyleBackColor = true;
+            this.OpenFilebtn.Click += new System.EventHandler(this.OpenFilebtn_Click);
             // 
-            // button1
+            // Orlbl
             // 
-            this.button1.Location = new System.Drawing.Point(204, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "QR Code Scanner";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Orlbl.AutoSize = true;
+            this.Orlbl.Location = new System.Drawing.Point(243, 298);
+            this.Orlbl.Name = "Orlbl";
+            this.Orlbl.Size = new System.Drawing.Size(40, 15);
+            this.Orlbl.TabIndex = 28;
+            this.Orlbl.Text = "--Or--";
+            // 
+            // Doyou
+            // 
+            this.Doyou.AutoSize = true;
+            this.Doyou.Location = new System.Drawing.Point(204, 323);
+            this.Doyou.Name = "Doyou";
+            this.Doyou.Size = new System.Drawing.Size(137, 15);
+            this.Doyou.TabIndex = 29;
+            this.Doyou.Text = "Do you have a QR Code?";
+            // 
+            // Openfilelbl
+            // 
+            this.Openfilelbl.AutoSize = true;
+            this.Openfilelbl.Location = new System.Drawing.Point(40, 417);
+            this.Openfilelbl.Name = "Openfilelbl";
+            this.Openfilelbl.Size = new System.Drawing.Size(195, 15);
+            this.Openfilelbl.TabIndex = 30;
+            this.Openfilelbl.Text = "Do you want to Open a File Record?";
+            // 
+            // Exitbtn
+            // 
+            this.Exitbtn.Location = new System.Drawing.Point(432, 417);
+            this.Exitbtn.Name = "Exitbtn";
+            this.Exitbtn.Size = new System.Drawing.Size(75, 23);
+            this.Exitbtn.TabIndex = 31;
+            this.Exitbtn.Text = "Exit";
+            this.Exitbtn.UseVisualStyleBackColor = true;
+            this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // HealthDeclarationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 558);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Recordbtn2);
-            this.Controls.Add(this.RecordBox1);
+            this.ClientSize = new System.Drawing.Size(539, 476);
+            this.Controls.Add(this.Exitbtn);
+            this.Controls.Add(this.Openfilelbl);
+            this.Controls.Add(this.Doyou);
+            this.Controls.Add(this.Orlbl);
+            this.Controls.Add(this.OpenFilebtn);
+            this.Controls.Add(this.QRCode);
             this.Controls.Add(this.DateFormat);
             this.Controls.Add(this.Datelabel);
             this.Controls.Add(this.DateBox8);
@@ -328,6 +363,7 @@
             this.Controls.Add(this.NameLabel1);
             this.Controls.Add(this.NameBox1);
             this.Name = "HealthDeclarationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Health Declaration Form";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -360,8 +396,11 @@
         private TextBox DateBox8;
         private Label Datelabel;
         private Label DateFormat;
-        private RichTextBox RecordBox1;
-        private Button Recordbtn2;
-        private Button button1;
+        private Button QRCode;
+        private Button OpenFilebtn;
+        private Label Orlbl;
+        private Label Doyou;
+        private Label Openfilelbl;
+        private Button Exitbtn;
     }
 }

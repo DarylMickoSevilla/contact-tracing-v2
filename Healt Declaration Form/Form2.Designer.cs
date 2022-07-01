@@ -29,89 +29,96 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.CameraBox1 = new System.Windows.Forms.ComboBox();
+            this.CameraBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ScannerBox1 = new System.Windows.Forms.PictureBox();
-            this.strbtn = new System.Windows.Forms.Button();
-            this.readbtn = new System.Windows.Forms.Button();
+            this.ScannerBox = new System.Windows.Forms.PictureBox();
+            this.Startbtn = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.DecodedText = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ScannerBox1)).BeginInit();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Savebtn = new System.Windows.Forms.Button();
+            this.DisplayFilelbl = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ScannerBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // CameraBox1
+            // CameraBox
             // 
-            this.CameraBox1.FormattingEnabled = true;
-            this.CameraBox1.Location = new System.Drawing.Point(137, 38);
-            this.CameraBox1.Name = "CameraBox1";
-            this.CameraBox1.Size = new System.Drawing.Size(257, 23);
-            this.CameraBox1.TabIndex = 0;
+            this.CameraBox.FormattingEnabled = true;
+            this.CameraBox.Location = new System.Drawing.Point(66, 30);
+            this.CameraBox.Name = "CameraBox";
+            this.CameraBox.Size = new System.Drawing.Size(330, 23);
+            this.CameraBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 41);
+            this.label1.Location = new System.Drawing.Point(12, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Camera";
             // 
-            // ScannerBox1
+            // ScannerBox
             // 
-            this.ScannerBox1.Location = new System.Drawing.Point(83, 83);
-            this.ScannerBox1.Name = "ScannerBox1";
-            this.ScannerBox1.Size = new System.Drawing.Size(349, 303);
-            this.ScannerBox1.TabIndex = 2;
-            this.ScannerBox1.TabStop = false;
+            this.ScannerBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ScannerBox.Location = new System.Drawing.Point(48, 78);
+            this.ScannerBox.Name = "ScannerBox";
+            this.ScannerBox.Size = new System.Drawing.Size(348, 241);
+            this.ScannerBox.TabIndex = 2;
+            this.ScannerBox.TabStop = false;
             // 
-            // strbtn
+            // Startbtn
             // 
-            this.strbtn.Location = new System.Drawing.Point(216, 392);
-            this.strbtn.Name = "strbtn";
-            this.strbtn.Size = new System.Drawing.Size(75, 23);
-            this.strbtn.TabIndex = 3;
-            this.strbtn.Text = "Start";
-            this.strbtn.UseVisualStyleBackColor = true;
-            this.strbtn.Click += new System.EventHandler(this.strbtn_Click);
+            this.Startbtn.Location = new System.Drawing.Point(173, 335);
+            this.Startbtn.Name = "Startbtn";
+            this.Startbtn.Size = new System.Drawing.Size(75, 23);
+            this.Startbtn.TabIndex = 3;
+            this.Startbtn.Text = "Start";
+            this.Startbtn.UseVisualStyleBackColor = true;
             // 
-            // readbtn
+            // richTextBox1
             // 
-            this.readbtn.Location = new System.Drawing.Point(216, 421);
-            this.readbtn.Name = "readbtn";
-            this.readbtn.Size = new System.Drawing.Size(75, 23);
-            this.readbtn.TabIndex = 4;
-            this.readbtn.Text = "Read";
-            this.readbtn.UseVisualStyleBackColor = true;
-            this.readbtn.Click += new System.EventHandler(this.readbtn_Click);
+            this.richTextBox1.Location = new System.Drawing.Point(431, 103);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(274, 200);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
             // 
-            // timer1
+            // Savebtn
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Savebtn.Location = new System.Drawing.Point(527, 309);
+            this.Savebtn.Name = "Savebtn";
+            this.Savebtn.Size = new System.Drawing.Size(75, 23);
+            this.Savebtn.TabIndex = 5;
+            this.Savebtn.Text = "Save";
+            this.Savebtn.UseVisualStyleBackColor = true;
+            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
             // 
-            // DecodedText
+            // DisplayFilelbl
             // 
-            this.DecodedText.Location = new System.Drawing.Point(83, 463);
-            this.DecodedText.Name = "DecodedText";
-            this.DecodedText.Size = new System.Drawing.Size(349, 134);
-            this.DecodedText.TabIndex = 5;
-            this.DecodedText.Text = "";
+            this.DisplayFilelbl.AutoSize = true;
+            this.DisplayFilelbl.Location = new System.Drawing.Point(506, 78);
+            this.DisplayFilelbl.Name = "DisplayFilelbl";
+            this.DisplayFilelbl.Size = new System.Drawing.Size(120, 15);
+            this.DisplayFilelbl.TabIndex = 6;
+            this.DisplayFilelbl.Text = "Decoded Information";
             // 
             // CodeScanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 636);
-            this.Controls.Add(this.DecodedText);
-            this.Controls.Add(this.readbtn);
-            this.Controls.Add(this.strbtn);
-            this.Controls.Add(this.ScannerBox1);
+            this.ClientSize = new System.Drawing.Size(749, 400);
+            this.Controls.Add(this.DisplayFilelbl);
+            this.Controls.Add(this.Savebtn);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Startbtn);
+            this.Controls.Add(this.ScannerBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CameraBox1);
+            this.Controls.Add(this.CameraBox);
             this.Name = "CodeScanner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Code Scanner";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CodeScanner_FormClosing);
             this.Load += new System.EventHandler(this.CodeScanner_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ScannerBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScannerBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,12 +126,13 @@
 
         #endregion
 
-        private ComboBox CameraBox1;
+        private ComboBox CameraBox;
         private Label label1;
-        private PictureBox ScannerBox1;
-        private Button strbtn;
-        private Button readbtn;
+        private PictureBox ScannerBox;
+        private Button Startbtn;
         private System.Windows.Forms.Timer timer1;
-        private RichTextBox DecodedText;
+        private RichTextBox richTextBox1;
+        private Button Savebtn;
+        private Label DisplayFilelbl;
     }
 }

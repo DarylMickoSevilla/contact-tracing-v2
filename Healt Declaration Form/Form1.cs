@@ -25,21 +25,21 @@ namespace Healt_Declaration_Form
             NameBox1.Text = DateBox8.Text = AgeBox2.Text = ContactBox3.Text = TemperatureBox4.Text = TimeinBox5.Text = TimeoutBox6.Text = AddressBox7.Text = " ";
         }
 
-        private void Recordbtn2_Click(object sender, EventArgs e)
-        {
-
-            OpenFileDialog Read = new OpenFileDialog();
-
-            if (Read.ShowDialog() == DialogResult.OK)
-            {
-                RecordBox1.Text = File.ReadAllText(Read.FileName);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void QRCode_Click(object sender, EventArgs e)
         {
             CodeScanner Scanner = new CodeScanner();
             Scanner.Show();
+        }
+
+        private void OpenFilebtn_Click(object sender, EventArgs e)
+        {
+            OpenFile Window = new OpenFile();
+            Window.Show();
+        }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
