@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\New folder\\Healt Declaration Form\\Healt Declaration Form\\Healt Declaration Form.csproj": {}
+    "C:\\New folder\\Healt Declaration Form - Testing\\Healt Declaration Form\\Healt Declaration Form.csproj": {}
   },
   "projects": {
-    "C:\\New folder\\Healt Declaration Form\\Healt Declaration Form\\Healt Declaration Form.csproj": {
+    "C:\\New folder\\Healt Declaration Form - Testing\\Healt Declaration Form\\Healt Declaration Form.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\New folder\\Healt Declaration Form\\Healt Declaration Form\\Healt Declaration Form.csproj",
+        "projectUniqueName": "C:\\New folder\\Healt Declaration Form - Testing\\Healt Declaration Form\\Healt Declaration Form.csproj",
         "projectName": "Healt Declaration Form",
-        "projectPath": "C:\\New folder\\Healt Declaration Form\\Healt Declaration Form\\Healt Declaration Form.csproj",
+        "projectPath": "C:\\New folder\\Healt Declaration Form - Testing\\Healt Declaration Form\\Healt Declaration Form.csproj",
         "packagesPath": "C:\\Users\\garci\\.nuget\\packages\\",
-        "outputPath": "C:\\New folder\\Healt Declaration Form\\Healt Declaration Form\\obj\\",
+        "outputPath": "C:\\New folder\\Healt Declaration Form - Testing\\Healt Declaration Form\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\garci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "AForge.Video.DirectShow": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

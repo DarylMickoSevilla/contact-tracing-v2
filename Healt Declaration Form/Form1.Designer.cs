@@ -54,6 +54,7 @@
             this.DateFormat = new System.Windows.Forms.Label();
             this.RecordBox1 = new System.Windows.Forms.RichTextBox();
             this.Recordbtn2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameBox1
@@ -222,7 +223,7 @@
             // Savebtn
             // 
             this.Savebtn.BackColor = System.Drawing.SystemColors.Info;
-            this.Savebtn.Location = new System.Drawing.Point(212, 266);
+            this.Savebtn.Location = new System.Drawing.Point(232, 307);
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(75, 23);
             this.Savebtn.TabIndex = 19;
@@ -268,7 +269,7 @@
             // 
             // RecordBox1
             // 
-            this.RecordBox1.Location = new System.Drawing.Point(66, 325);
+            this.RecordBox1.Location = new System.Drawing.Point(94, 348);
             this.RecordBox1.Name = "RecordBox1";
             this.RecordBox1.Size = new System.Drawing.Size(373, 159);
             this.RecordBox1.TabIndex = 24;
@@ -284,11 +285,22 @@
             this.Recordbtn2.UseVisualStyleBackColor = true;
             this.Recordbtn2.Click += new System.EventHandler(this.Recordbtn2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "QR Code Scanner";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // HealthDeclarationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 558);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Recordbtn2);
             this.Controls.Add(this.RecordBox1);
             this.Controls.Add(this.DateFormat);
@@ -350,5 +362,6 @@
         private Label DateFormat;
         private RichTextBox RecordBox1;
         private Button Recordbtn2;
+        private Button button1;
     }
 }

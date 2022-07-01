@@ -15,3 +15,26 @@ C:\New folder\Healt Declaration Form\Healt Declaration Form\obj\Debug\net6.0-win
 C:\New folder\Healt Declaration Form\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.pdb
 C:\New folder\Healt Declaration Form\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.genruntimeconfig.cache
 C:\New folder\Healt Declaration Form\Healt Declaration Form\obj\Debug\net6.0-windows\ref\Healt Declaration Form.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\Healt Declaration Form.exe
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\Healt Declaration Form.deps.json
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\Healt Declaration Form.runtimeconfig.json
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\Healt Declaration Form.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\Healt Declaration Form.pdb
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.csproj.AssemblyReference.cache
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt_Declaration_Form.HealthDeclarationForm.resources
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.csproj.GenerateResource.cache
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.AssemblyInfoInputs.cache
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.AssemblyInfo.cs
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.csproj.CoreCompileInputs.cache
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\refint\Healt Declaration Form.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.pdb
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.genruntimeconfig.cache
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\ref\Healt Declaration Form.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt_Declaration_Form.CodeScanner.resources
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\AForge.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\bin\Debug\net6.0-windows\zxing.dll
+C:\New folder\Healt Declaration Form - Testing\Healt Declaration Form\obj\Debug\net6.0-windows\Healt Declaration Form.csproj.CopyComplete
