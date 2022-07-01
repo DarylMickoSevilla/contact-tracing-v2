@@ -76,7 +76,12 @@ namespace Healt_Declaration_Form
 
         private void Savebtn_Click(object sender, EventArgs e)
         {
+            StreamWriter Form;
 
+            Form = File.CreateText(@"C:\HealthDeclarationForm\HealthDeclarationFormQR.txt");
+            Form.WriteLine(DecodeBox.Text);
+            Form.Close();
+            this.Close();
         }
     }
 }
