@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ScannerBox = new System.Windows.Forms.PictureBox();
             this.Startbtn = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.DecodeBox = new System.Windows.Forms.RichTextBox();
             this.Savebtn = new System.Windows.Forms.Button();
             this.DisplayFilelbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ScannerBox)).BeginInit();
@@ -74,14 +74,20 @@
             this.Startbtn.TabIndex = 3;
             this.Startbtn.Text = "Start";
             this.Startbtn.UseVisualStyleBackColor = true;
+            this.Startbtn.Click += new System.EventHandler(this.Startbtn_Click);
             // 
-            // richTextBox1
+            // Timer
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(431, 103);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(274, 200);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // DecodeBox
+            // 
+            this.DecodeBox.Location = new System.Drawing.Point(431, 103);
+            this.DecodeBox.Name = "DecodeBox";
+            this.DecodeBox.Size = new System.Drawing.Size(274, 200);
+            this.DecodeBox.TabIndex = 4;
+            this.DecodeBox.Text = "";
             // 
             // Savebtn
             // 
@@ -109,7 +115,7 @@
             this.ClientSize = new System.Drawing.Size(749, 400);
             this.Controls.Add(this.DisplayFilelbl);
             this.Controls.Add(this.Savebtn);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.DecodeBox);
             this.Controls.Add(this.Startbtn);
             this.Controls.Add(this.ScannerBox);
             this.Controls.Add(this.label1);
@@ -117,6 +123,7 @@
             this.Name = "CodeScanner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Code Scanner";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CodeScanner_FormClosing);
             this.Load += new System.EventHandler(this.CodeScanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ScannerBox)).EndInit();
             this.ResumeLayout(false);
@@ -130,8 +137,8 @@
         private Label label1;
         private PictureBox ScannerBox;
         private Button Startbtn;
-        private System.Windows.Forms.Timer timer1;
-        private RichTextBox richTextBox1;
+        private System.Windows.Forms.Timer Timer;
+        private RichTextBox DecodeBox;
         private Button Savebtn;
         private Label DisplayFilelbl;
     }
